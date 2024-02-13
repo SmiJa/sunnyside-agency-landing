@@ -1,0 +1,44 @@
+/* FONTS */
+@import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900|open-sans:400,700,800|playfair-display:600);
+
+
+/* VARIABLS */
+:root {
+  /* PRIMARY COLORS */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desat-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* NEUTRAL COLORS */
+  --very-dark-desat-blue: hsl(212, 27%, 19%);
+  --very-dark-gray-blue: hsl(213, 9%, 39%);
+  --dark-gray-blue: hsl(232, 9%, 39%);
+  --gray-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* BOX SIZING */
+* {
+  box-sizing: border-box;
+}
+
+/* HEADINGS SETTINGS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Fraunces';
+}
+
+/* BODY SETTINGS */
+body {
+  font-size: 18px;
+  font-family: 'Barlow';
+  margin: 0;
+}
