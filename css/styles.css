@@ -1,5 +1,5 @@
 /* FONTS */
-@import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900|open-sans:400,700,800|playfair-display:600);
+@import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900);
 
 
 /* VARIABLS */
@@ -53,10 +53,56 @@ body {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  color: var(--white);
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 65px;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  margin: 80px 0;
 }
 
 header {
-  width: 100%;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 40px
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+header ul li:nth-child(3) {
+  padding-right: 40px;
+}
+
+header ul li:last-child {
+  color: var(--very-dark-desat-blue);
+  background-color: var(--white);
+  font-family: 'Fraunces';
+  padding: 21px 35px;
+  border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header ul li:last-child:hover {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.25);
 }
