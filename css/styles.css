@@ -43,4 +43,20 @@ body {
   font-size: 18px;
   font-family: 'Barlow';
   margin: 0;
+  background-color: var(--white);
+  color: var(--very-dark-desat-blue);
+}
+
+#hero {
+  height: 800px;
+  background-image: url(./../images/desktop/image-header.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
