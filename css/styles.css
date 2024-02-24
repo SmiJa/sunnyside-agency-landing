@@ -1,8 +1,6 @@
 /* FONTS */
 @import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900);
 
-/* ! Set break point at 800px */
-
 /* VARIABLS */
 :root {
   /* PRIMARY COLORS */
@@ -106,6 +104,20 @@ header ul li:last-child {
 header ul li:last-child:hover {
   color: var(--white);
   background-color: rgba(255, 255, 255, 0.25);
+}
+
+#mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: inline-block;
+  }
 }
 
 
