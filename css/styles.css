@@ -285,6 +285,21 @@ header ul li:last-child:hover {
   .graphic-design,
   .photography {
     width: 100%;
+    height: 620px;
+  }
+  .graphic-design p,
+  .photography p {
+    width: 80%;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .graphic-design,
+  .photography {
+    width: 100%;
+    background-size: cover;
+    height: 620px;
   }
   .graphic-design {
     background-image: url(./../images/mobile/image-graphic-design.jpg);
