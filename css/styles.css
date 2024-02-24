@@ -64,6 +64,19 @@ body {
   margin: 80px 0;
 }
 
+@media screen and (max-width: 500px) {
+  #hero {
+    background-image: url(./../images/mobile/image-header.jpg);
+    height: 100dvh;
+  }
+
+  #hero h1 {
+    font-size: 13vw;
+    letter-spacing: 0.2rem;
+    margin: 60px 0;
+  }
+}
+
 header {
   max-width: 1440px;
   width: 100%;
