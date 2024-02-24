@@ -1,6 +1,7 @@
 /* FONTS */
 @import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900);
 
+/* ! Set break point at 800px */
 
 /* VARIABLS */
 :root {
@@ -117,7 +118,6 @@ header ul li:last-child:hover {
 #about .box {
   width: 50%;
   height: 600px;
-  aspect-ratio: 700 / 600;
 }
 
 #about img {
@@ -126,11 +126,18 @@ header ul li:last-child:hover {
   padding: 0;
   margin: 0;
   height: 600px;
+  object-fit: cover;
 }
 
 #about .text-box {
-  padding: 130px;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.inner-box {
+  max-width: 400px;
 }
 
 #about h2 {
@@ -145,6 +152,17 @@ header ul li:last-child:hover {
 
 .item-2 {
   order: -1;
+}
+
+@media screen and (max-width: 960px) {
+  .item-2 {
+    order: 0;
+  }
+
+  #about .box {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #about a {
