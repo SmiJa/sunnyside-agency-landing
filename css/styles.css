@@ -308,3 +308,17 @@ header ul li:last-child:hover {
     background-image: url(./../images/mobile/image-photography.jpg);
   }
 }
+
+.attribution {
+  text-align: center;
+  background-color: #242424;
+  color: #cdcdcd
+}
+
+.attribution a {
+  color:hsl(7, 99%, 70%);
+}
+
+.attribution a:visited {
+  color:hsl(7, 99%, 70%);
+}
