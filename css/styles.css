@@ -309,6 +309,83 @@ header ul li:last-child:hover {
   }
 }
 
+
+
+#testimonials {
+  text-align: center;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials h2 {
+  text-transform: uppercase;
+  color: var(--gray-blue);
+  font-size: 1.35rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  margin-bottom: 80px;
+}
+
+.testimonial-row {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 80%;
+}
+
+@media screen and (max-width: 960px) {
+  .testimonial-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    width: 95%;
+  }
+}
+
+.testimonial {
+  width: 100%;
+  max-width: 330px;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--very-dark-gray-blue);
+}
+
+.img-wrap {
+  display: inline-block;
+  width: 80px;
+}
+
+.img-wrap img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  height: auto;
+}
+
+.testimonial h3 {
+  margin-bottom: 8px;
+  color: var(--very-dark-desat-blue);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.testimonial .title {
+  font-size: 0.9rem;
+  color: var(--gray-blue);
+}
+
+
+
+
 .attribution {
   text-align: center;
   background-color: #242424;
