@@ -395,7 +395,8 @@ header ul li:last-child:hover {
 .gallery-box {
   display: block;
   width: 25%;
-  height: 600px;
+  height: 50vw;
+  max-height: 600px;
 }
 
 .gallery-box img {
@@ -405,14 +406,13 @@ header ul li:last-child:hover {
   object-fit: cover;
 }
 
-@media screen and (max-width: 960px ) {
+@media screen and (max-width: 800px ) {
   #gallery {
     flex-wrap: wrap;
   }
 
   .gallery-box {
     width: 50%;
-    height: 320px;
   }
 }
 
