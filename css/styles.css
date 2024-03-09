@@ -1,7 +1,9 @@
-/* FONTS */
+/* FONTS
+   ============================= */
 @import url(https://fonts.bunny.net/css?family=barlow:600|fraunces:700,900);
 
-/* VARIABLS */
+/* GLOBAL SETTINGS
+   ============================= */
 :root {
   /* PRIMARY COLORS */
   --soft-red: hsl(7, 99%, 70%);
@@ -18,14 +20,12 @@
   --white: hsl(0, 0%, 100%);
 }
 
-/* BOX SIZING */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-/* HEADINGS SETTINGS */
 h1,
 h2,
 h3,
@@ -37,7 +37,8 @@ h6 {
   font-family: 'Fraunces';
 }
 
-/* BODY SETTINGS */
+/* BODY SETTINGS
+   ============================= */
 body {
   font-size: 18px;
   font-family: 'Barlow';
@@ -46,6 +47,9 @@ body {
   color: var(--very-dark-desat-blue);
 }
 
+
+/* HERO SETTINGS
+   ============================= */
 #hero {
   height: 800px;
   background-image: url(./../images/desktop/image-header.jpg);
@@ -77,6 +81,9 @@ body {
   }
 }
 
+
+/* HEADER SETTINGS
+   ============================= */
 header {
   max-width: 1440px;
   width: 100%;
@@ -88,25 +95,7 @@ header {
   padding: 34px 20px;
 }
 
-header #desktop-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-header #desktop-nav ul li {
-  list-style-type: none;
-  padding: 0 20px;
-}
-
-header #desktop-nav ul li:nth-child(3) {
-  padding-right: 40px;
-}
-
-header #desktop-nav ul li:last-child {
-  color: var(--very-dark-desat-blue);
-  background-color: var(--white);
+.contact a {
   font-family: 'Fraunces';
   padding: 21px 35px;
   border-radius: 500px;
@@ -114,7 +103,33 @@ header #desktop-nav ul li:last-child {
   font-weight: 700;
 }
 
-header #desktop-nav ul li:last-child:hover {
+#desktop-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#desktop-nav ul li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+#desktop-nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#desktop-nav ul li:nth-child(3) {
+  padding-right: 40px;
+}
+
+#desktop-nav ul li:last-child a {
+  color: var(--very-dark-desat-blue);
+  background-color: var(--white);
+}
+
+header #desktop-nav ul li:last-child:hover a {
   color: var(--white);
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -135,7 +150,7 @@ header #desktop-nav ul li:last-child:hover {
   text-align: center;
 }
 
-.show {
+.show-sub-menu {
   display: block;
 }
 
@@ -163,14 +178,17 @@ header #desktop-nav ul li:last-child:hover {
   gap: 30px;
 }
 
-.sub-menu ul li:last-child {
+.sub-menu ul li a {
+  text-decoration: none;
   color: var(--very-dark-desat-blue);
+}
+
+.sub-menu ul li:last-child {
+  margin: 20px 0;
+}
+
+.sub-menu ul li:last-child a {
   background-color: var(--yellow);
-  font-family: 'Fraunces';
-  padding: 21px 35px;
-  border-radius: 500px;
-  text-transform: uppercase;
-  font-weight: 700;
 }
 
 @media screen and (max-width: 800px) {
@@ -184,6 +202,8 @@ header #desktop-nav ul li:last-child:hover {
 }
 
 
+/* ABOUT SETTINGS
+   ============================= */
 #about {
   display: flex;
   flex-direction: row;
@@ -286,7 +306,8 @@ header #desktop-nav ul li:last-child:hover {
 
 
 
-
+/* SERVICES SETTINGS
+   ============================= */
 #services {
   display: flex;
   flex-direction: row;
@@ -360,7 +381,8 @@ header #desktop-nav ul li:last-child:hover {
 }
 
 
-
+/* TESTIMONIALS SETTINGS
+   ============================= */
 #testimonials {
   text-align: center;
   padding: 100px 0;
@@ -434,7 +456,8 @@ header #desktop-nav ul li:last-child:hover {
 }
 
 
-
+/* GALLERY SETTINGS
+   ============================= */
 #gallery {
   width: 100%;
   display: flex;
@@ -467,7 +490,8 @@ header #desktop-nav ul li:last-child:hover {
 }
 
 
-
+/* FOOTER SETTINGS
+   ============================= */
 footer {
   background-color: var(--dark-moderate-cyan);
   display: flex;
@@ -505,6 +529,8 @@ footer nav,
 }
 
 
+/* ATTRIBUTION SETTINGS
+   ============================= */
 .attribution {
   text-align: center;
   background-color: #242424;
