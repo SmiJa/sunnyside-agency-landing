@@ -124,7 +124,7 @@ header #desktop-nav ul li:last-child:hover {
 }
 
 .sub-menu {
-  display: block;
+  display: none;
   background-color: var(--white);
   color: var(--very-dark-desat-blue);
   position: absolute;
@@ -133,6 +133,10 @@ header #desktop-nav ul li:last-child:hover {
   width: 84%;
   padding: 30px 10px;
   text-align: center;
+}
+
+.show {
+  display: block;
 }
 
 .sub-menu::after {
