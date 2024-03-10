@@ -51,7 +51,7 @@ body {
 /* HERO SETTINGS
    ============================= */
 #hero {
-  height: 100vh;
+  height: 800px;
   background-image: url(./../images/desktop/image-header.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 @media screen and (max-width: 500px) {
   #hero {
     background-image: url(./../images/mobile/image-header.jpg);
-    height: 100dvh;
+    height: 100vh;
   }
 
   #hero h1 {
@@ -212,6 +212,7 @@ header #desktop-nav ul li:last-child:hover a {
 
 #about .box {
   width: 50%;
+  background-color: rgba(255,251,248,255);
 }
 
 #about img {
@@ -317,7 +318,7 @@ header #desktop-nav ul li:last-child:hover a {
 .photography {
   width: 50%;
   height: 50vw;
-  max-height: 100vh;
+  max-height: 800px;
   text-align: center;
   padding: 0 20px 40px 20px;
   display: flex;
@@ -391,6 +392,7 @@ header #desktop-nav ul li:last-child:hover a {
   justify-content: center;
   align-items: center;
   min-height: 800px;
+  background-color: rgba(255,251,248,255);
 }
 
 #testimonials h2 {
@@ -496,7 +498,7 @@ header #desktop-nav ul li:last-child:hover a {
 /* FOOTER SETTINGS
    ============================= */
 footer {
-  background-color: var(--dark-moderate-cyan);
+  background-color: rgba(144,212,197,255);
   display: flex;
   flex-direction: column;
   align-items: center;
