@@ -392,7 +392,7 @@ header #desktop-nav ul li:last-child:hover a {
   justify-content: center;
   align-items: center;
   min-height: 800px;
-  background-color: rgba(255,251,248,255);
+  background-color: var(--white);
 }
 
 #testimonials h2 {
@@ -474,7 +474,7 @@ header #desktop-nav ul li:last-child:hover a {
   display: block;
   width: 25%;
   height: 50vw;
-  max-height: 600px;
+  max-height: 500px;
 }
 
 .gallery-box img {
@@ -538,14 +538,14 @@ footer nav,
    ============================= */
 .attribution {
   text-align: center;
-  background-color: #242424;
-  color: #cdcdcd
+  background-color: #292929;
+  color: #cdcdcd;
+  font-size: 1rem;
+  padding: 3px;
 }
 
-.attribution a {
-  color:hsl(7, 99%, 70%);
-}
-
-.attribution a:visited {
-  color:hsl(7, 99%, 70%);
+.attribution a,
+.attribution a:visited,
+.attribution a:active {
+  color:#cdcdcd;
 }
