@@ -390,6 +390,7 @@ header #desktop-nav ul li:last-child:hover a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 800px;
 }
 
 #testimonials h2 {
