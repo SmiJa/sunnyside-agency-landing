@@ -51,7 +51,7 @@ body {
 /* HERO SETTINGS
    ============================= */
 #hero {
-  height: 800px;
+  height: 100vh;
   background-image: url(./../images/desktop/image-header.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -212,7 +212,6 @@ header #desktop-nav ul li:last-child:hover a {
 
 #about .box {
   width: 50%;
-  height: 600px;
 }
 
 #about img {
@@ -220,7 +219,7 @@ header #desktop-nav ul li:last-child:hover a {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 600px;
+  min-height: 600px;
   object-fit: cover;
 }
 
@@ -317,7 +316,8 @@ header #desktop-nav ul li:last-child:hover a {
 .graphic-design,
 .photography {
   width: 50%;
-  height: 600px;
+  height: 50vw;
+  max-height: 100vh;
   text-align: center;
   padding: 0 20px 40px 20px;
   display: flex;
@@ -404,8 +404,10 @@ header #desktop-nav ul li:last-child:hover a {
 .testimonial-row {
   display: flex;
   flex-direction: row;
-  justify-items: center;
+  justify-content: space-between;
   width: 80%;
+  max-width: 1260px;
+  gap: 20px;
 }
 
 @media screen and (max-width: 960px) {
@@ -418,8 +420,8 @@ header #desktop-nav ul li:last-child:hover a {
 }
 
 .testimonial {
-  width: 100%;
-  max-width: 330px;
+  /* width: 100%; */
+  width: 330px;
   min-height: 330px;
   display: flex;
   flex-direction: column;
